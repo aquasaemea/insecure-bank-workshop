@@ -10,7 +10,7 @@ on:
 
 env:
    DOCKER_REPOSITORY: iheanyiorg # name of Docker Hub Org ID
-   IMAGE_NAME: insecure-bank-workshop
+   IMAGE_NAME: workshop-insecure
    IMAGE_TAG: ${{ github.run_number }} 
 
 jobs:
