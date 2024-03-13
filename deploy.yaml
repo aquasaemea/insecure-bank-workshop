@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: insecure-bank-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: insecure-bank-app
+  template:
+    metadata:
+      labels:
+        app: insecure-bank-app
+    spec:
+      containers:
+      - name: insecure-bank
+        image: insecure-bank
+        ports:
+        - containerPort: 8080
