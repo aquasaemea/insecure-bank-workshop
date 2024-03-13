@@ -46,7 +46,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: $DOCKER_REPOSITORY/$IMAGE_NAME:$IMAGE_TAG
+          tags: iheanyiorg/$IMAGE_NAME:$IMAGE_TAG
 
       - name: Login to Aqua Registry
         uses: docker/login-action@v1
