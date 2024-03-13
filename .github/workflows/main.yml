@@ -6,7 +6,7 @@ on:
       - main
   pull_request:
     branches: 
-      - []
+      - '**'
 
 env:
    DOCKER_REPOSITORY: iheanyiorg # name of Docker Hub Org ID
